@@ -1,6 +1,6 @@
 /**
  * Exercise 07:
- *
+ *clear
  * Finish the code of the `exercise07` function so that it:
  *
  * 1. Stores in the `func` variable an arrow function
@@ -11,7 +11,7 @@
 
 // Finish the code of the function
 function exercise07() {
-    let func = "";
+    let func= (a,b)=> a+b
 
     // Don’t change the code bellow this line
     return func;
