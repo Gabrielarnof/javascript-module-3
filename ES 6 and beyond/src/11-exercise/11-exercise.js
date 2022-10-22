@@ -9,6 +9,7 @@
  *
  * function fn (array, entry) {...}
  *
+ * 
  * 2. Executes the array.find() method to find the `entry`
  *    in the `array` parameter that the function receives.
  *
