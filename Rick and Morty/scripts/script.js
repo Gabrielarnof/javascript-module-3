@@ -38,4 +38,3 @@ const bodyEl = document.querySelector("body");
 bodyEl.append(mainAreaEl);
 createHeader();
 createAside();
-createEpisode("ananda");
