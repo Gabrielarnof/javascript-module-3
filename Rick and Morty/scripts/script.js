@@ -12,7 +12,8 @@ const createHeader = () => {
 
 // Aside
 
-cosnt  episodeListEl = document.createElement("ul");
+const episodeListEl = document.createElement("ul");
+const episodeEl = document.createElement("li");
 
 // body
 const bodyEl = document.querySelector("body");
