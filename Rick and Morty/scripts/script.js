@@ -18,12 +18,21 @@ const createAside = () => {
   bodyEl.append(sidebarEl);
 };
 
+let episodesListArray;
+
+fetch("https://rickandmortyapi.com/api/episode")
+  .then((response) => response.json())
+  .then((data) =>
+    data.results.map((element) => createEpisode(`Episode ${element.id} `))
+  );
+
 const createEpisode = (text) => {
   const episodeEl = document.createElement("li");
   episodeEl.innerText = text;
   episodeListEl.appendChild(episodeEl);
 };
 
+// const createEpisodes
 // body
 const bodyEl = document.querySelector("body");
 bodyEl.append(mainAreaEl);
