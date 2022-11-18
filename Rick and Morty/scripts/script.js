@@ -1,5 +1,4 @@
 const mainAreaEl = document.createElement("main");
-const sidebarEl = document.createElement("aside");
 
 // header
 const createHeader = () => {
@@ -11,11 +10,23 @@ const createHeader = () => {
 };
 
 // Aside
-
 const episodeListEl = document.createElement("ul");
-const episodeEl = document.createElement("li");
+
+const createAside = () => {
+  const sidebarEl = document.createElement("aside");
+  sidebarEl.append(episodeListEl);
+  bodyEl.append(sidebarEl);
+};
+
+const createEpisode = (text) => {
+  const episodeEl = document.createElement("li");
+  episodeEl.innerText = text;
+  episodeListEl.appendChild(episodeEl);
+};
 
 // body
 const bodyEl = document.querySelector("body");
-bodyEl.append(sidebarEl, mainAreaEl);
+bodyEl.append(mainAreaEl);
 createHeader();
+createAside();
+createEpisode("ananda");
